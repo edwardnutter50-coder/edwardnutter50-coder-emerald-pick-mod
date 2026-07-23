@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": "minecraft:emerald",
+    "1": "minecraft:emerald",
+    "2": "minecraft:emerald",
+    "4": "minecraft:stick",
+    "7": "minecraft:stick"
+  },
+  "result": {
+    "id": "easy_netherite_op_emerald_pick:emerald_pick",
+    "count": 1
+  }
+}

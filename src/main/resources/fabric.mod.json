@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "easy_netherite_op_emerald_pick",
+  "version": "${version}",
+  "name": "Easy Netherite + OP Emerald Pick",
+  "description": "Ported from the original Forge/MCreator 1.19.4 mod. Adds an absurdly overpowered emerald pickaxe (\"God Pick\") that mines everything instantly, plus an easy dirt+gold netherite ingot recipe.",
+  "authors": [
+    "blaze",
+    "MCreator (original)",
+    "Ported to Fabric 1.21.11 by Claude"
+  ],
+  "contact": {},
+  "license": "Academic Free License v3.0",
+  "icon": "assets/easy_netherite_op_emerald_pick/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.blaze.easynetheriteopemeraldpick.EasyNetheriteOpEmeraldPick"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

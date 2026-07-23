@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": "#minecraft:dirt",
+    "1": "#minecraft:dirt",
+    "2": "#minecraft:dirt",
+    "3": "#minecraft:dirt",
+    "4": "minecraft:gold_ingot",
+    "5": "#minecraft:dirt",
+    "6": "#minecraft:dirt",
+    "7": "#minecraft:dirt",
+    "8": "#minecraft:dirt"
+  },
+  "result": {
+    "id": "minecraft:netherite_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "easy_netherite_op_emerald_pick:item/emerald_pick"
+  }
+}
