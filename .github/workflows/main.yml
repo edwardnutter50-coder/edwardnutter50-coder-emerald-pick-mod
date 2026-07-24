@@ -22,22 +22,13 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Generate Gradle wrapper (if missing)
-        run: |
-          if [ ! -f "./gradlew" ]; then
-            sudo apt-get update -y
-            sudo apt-get install -y unzip
-            curl -sSL -o gradle.zip https://services.gradle.org/distributions/gradle-9.5.0-bin.zip
-            unzip -q gradle.zip
-            ./gradle-9.5.0/bin/gradle wrapper --gradle-version 9.5.0
-            rm -rf gradle.zip gradle-9.5.0
-          fi
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 9.5.0
 
       - name: Build with Gradle (Fabric Loom)
-        run: ./gradlew build --stacktrace
+        run: gradle build --stacktrace
 
       - name: Upload built mod jar
         uses: actions/upload-artifact@v4
