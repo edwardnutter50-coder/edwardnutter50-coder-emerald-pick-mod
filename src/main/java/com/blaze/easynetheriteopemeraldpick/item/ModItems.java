@@ -4,7 +4,7 @@ import com.blaze.easynetheriteopemeraldpick.EasyNetheriteOpEmeraldPick;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.PickaxeItem;
+
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -29,7 +29,7 @@ public final class ModItems {
 	}
 
 	public static final Item EMERALD_PICK = registerItem("emerald_pick",
-			settings -> new PickaxeItem(ModToolMaterials.EMERALD_PICK_MATERIAL, 1.0F, -3.0F, settings));
+			settings -> new EmeraldPickaxeItem(ModToolMaterials.EMERALD_PICK_MATERIAL, 1.0F, -3.0F, settings));
 
 	private static Item registerItem(String name, Function<Item.Settings, Item> factory) {
 		RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM,
